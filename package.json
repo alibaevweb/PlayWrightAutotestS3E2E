@@ -17,8 +17,8 @@
     "playwright": "^1.22.1"
   },
   "dependencies": {
-    "authenticator": "^1.1.5",
     "Faker": "npm:faker@^6.6.6",
+    "authenticator": "^1.1.5",
     "otpauth": "9.0.2",
     "package": "^1.0.1",
     "playwright-tesults-reporter": "^1.0.0",
