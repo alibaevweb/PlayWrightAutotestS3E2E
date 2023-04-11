@@ -1,0 +1,53 @@
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.swp
+
+pids
+logs
+results
+tmp
+
+# Build
+public/css/main.css
+
+# Coverage reports
+coverage
+
+# API keys and secrets
+.env
+
+# Dependency directory
+node_modules
+bower_components
+
+# Editors
+.idea
+*.iml
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Ignore built ts files
+dist/**/*
+
+# ignore yarn.lock
+yarn.lock
+
+
+allure-report
+
+allure-results
+test-results/tests-admin.organization-Create-organization-name-Chrome/test-failed-1.png
+test-results/.playwright-artifacts-0/36460916e3ed3c9a60ad431c60f7e33f.png
+test-result.json
+test-results\.png
+test-result.json
+test-results/tests-auth-User-can-auth-with-authentificator-Chrome/test-failed-1.png
+test-result.json
