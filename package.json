@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.22.1",
+    "@types/redis": "^4.0.11",
     "allure-commandline": "^2.17.2",
     "allure-playwright": "^2.0.0-beta.16",
     "experimental-allure-playwright": "0.0.3",
@@ -17,11 +18,13 @@
     "playwright": "^1.22.1"
   },
   "dependencies": {
-    "Faker": "npm:faker@^6.6.6",
     "authenticator": "^1.1.5",
+    "Faker": "npm:faker@^6.6.6",
     "otpauth": "9.0.2",
     "package": "^1.0.1",
+    "pg": "^8.10.0",
     "playwright-tesults-reporter": "^1.0.0",
+    "redis": "^4.6.5",
     "uuid": "^9.0.0"
   }
 }
