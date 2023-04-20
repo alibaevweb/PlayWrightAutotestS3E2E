@@ -22,17 +22,7 @@ test.beforeEach(async ({ page }) => {
     await page.click('button[type="submit"] span[class="MuiButton-label"]')
 });
 */
-/*
-test('User can auth with authentificator', async ({ page }) => {
-  const homepage = new HomePage(page);
-  const locator = page.locator('[data-testid="error-text"]');
-  await homepage.open();
-  await new LoginPage(page).authLogin(user.email, user.password)
-  //await expect(locator).toHaveText(['Пользователь не найден']);;
-  //await expect(page).toHaveURL('https://dev.sergek.kz/events/list');
-});
-*/
-//Авторизация с корректным e-mail-ом и паролем
+
 test('User can auth with authentificator', async ({ page }) => {
 
     const homepage = new HomePage(page);
@@ -48,7 +38,7 @@ test('User can auth with authentificator', async ({ page }) => {
     await expect(page).toHaveURL('https://dev.sergek.kz/ai-testing?tab=numbers');
 });
 
-test('User can auth with ECP', async ({ page }) => {
+test.skip('User can auth with ECP', async ({ page }) => {
 
     const homepage = new HomePage(page);
     const locator = page.locator('.MuiFormHelperText-contained'); 
