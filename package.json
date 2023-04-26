@@ -9,15 +9,18 @@
   "author": "Orynbay Miras",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.22.1",
+    "@playwright/test": "^1.32.3",
+    "@types/jest": "^29.5.1",
     "@types/redis": "^4.0.11",
     "allure-commandline": "^2.17.2",
     "allure-playwright": "^2.0.0-beta.16",
     "experimental-allure-playwright": "0.0.3",
     "faker": "^5.5.3",
+    "mocha": "^10.2.0",
     "playwright": "^1.22.1"
   },
   "dependencies": {
+    "@redis/client": "^1.5.6",
     "authenticator": "^1.1.5",
     "Faker": "npm:faker@^6.6.6",
     "otpauth": "9.0.2",

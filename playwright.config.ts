@@ -1,4 +1,8 @@
 import { PlaywrightTestConfig } from '@playwright/test';
+import { config as dotenvConfig } from 'dotenv';
+import { resolve } from 'path';
+
+dotenvConfig({ path: resolve(__dirname, '.env'), override: true });
 
 const config: PlaywrightTestConfig = {
   // Timeout
@@ -13,7 +17,8 @@ const config: PlaywrightTestConfig = {
 
     // Artifacts
     screenshot: 'only-on-failure',
-
+    baseURL: "https://dev.sergek.kz/api/main/v2",
+    ignoreHTTPSErrors: true,
     channel: "chrome",
 
     video: "retry-with-video",

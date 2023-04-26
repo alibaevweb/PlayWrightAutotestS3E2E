@@ -40,6 +40,7 @@ dist/**/*
 # ignore yarn.lock
 yarn.lock
 
+playwright-report
 
 allure-report
 
@@ -51,3 +52,6 @@ test-results\.png
 test-result.json
 test-results/tests-auth-User-can-auth-with-authentificator-Chrome/test-failed-1.png
 test-result.json
+/test-results/
+/playwright-report/
+/playwright/.cache/
