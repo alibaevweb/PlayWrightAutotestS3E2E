@@ -146,7 +146,7 @@ test("[POST] Ввод неверного пароля", async ({ request, baseUR
   const responseBody = JSON.parse(await _response.text());
   const blockUserMessage = responseBody.message;
 
-  if (blockUserMessage == $text.blockUserMessage) {
+  if (blockUserMessage == $text.blockUserMessage || $text.userAccountBlockedMsg) {
     const pgClient = new Client({
       host: process.env.postgreHost,
       port: process.env.postgrePort,
@@ -160,7 +160,7 @@ test("[POST] Ввод неверного пароля", async ({ request, baseUR
       await pgClient.query(
         'SELECT is_deleted FROM "public"."user" WHERE id=9689'
       )
-    ).rows[0].is_deleted;
+    ).rows[0].is_deleted;  
 
     if (result == true) {
       await pgClient.query(
