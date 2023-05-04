@@ -16,6 +16,10 @@ tmp
 # Build
 public/css/main.css
 
+#vscode
+.vscode
+.gitignore
+
 # Coverage reports
 coverage
 
