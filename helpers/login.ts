@@ -1,4 +1,4 @@
-import { user } from '../constants/userdata';
+import { userAdm, userOne } from "../constants/userdata";
 
 const baseURL: string = 'http://admin.qazvms.local/';
 
@@ -9,9 +9,9 @@ export async function login(page): Promise<string> {
 
   const response = await page.context().request.post(`${baseURL}api/auth/login`, {
     data: {
-      email: user.email,
+      email: userAdm.email,
       fingerprint: "string",
-      password: user.password
+      password: userAdm.password
     }
   });
 

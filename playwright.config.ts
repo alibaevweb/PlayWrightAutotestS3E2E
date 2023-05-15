@@ -17,7 +17,7 @@ const config: PlaywrightTestConfig = {
 
     // Artifacts
     screenshot: 'only-on-failure',
-    baseURL: "https://dev.sergek.kz/api/main/v2",
+    baseURL: "https://qorgaujol.sergek.kz",
     ignoreHTTPSErrors: true,
     channel: "chrome",
 
