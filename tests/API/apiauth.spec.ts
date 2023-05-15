@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { user } from '../../constants/userdata';
+import { userAdm, userOne } from "../../constants/userdata";
 interface LoginResponse {
   access_token: string;
 }
@@ -8,9 +8,9 @@ test("login", async ({ request, baseURL, context }) => {
 
   const response = await request.post(`${baseURL}api/auth/login`, {
     data: {
-      email: user.email,
+      email: userAdm.email,
       fingerprint: "string",
-      password: user.password
+      password: userAdm.password
     }
   });
 
