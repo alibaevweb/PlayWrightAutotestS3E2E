@@ -1,4 +1,36 @@
+export const user = {
+    login: 'auto.test',
+    authentificator:'123456',
+    email: 'm.orynbay@srgdev.kz',
+    password: 'Qwerty11!!',
+    incorrectemail: 'm.orynbay@srgdev.kz1',
+    incorrectpassword: 'errorpassword',
+    testemail: 'xwkogypfnfztqalfyz@bvhrk.com',
+    testCamera: 'Тест Сетка',
+    noValueemail: '',
+    noValuepass: '',
+    deletedemail: 'cijpqxmmb@firste.ml',
+    deletedpassword: '@O304!1uboea7P5H',
+    blockedemail: 'vatiter217@peykesabz.com',
+    blockedpassword: 'C!Yng1&t37J89uj4',
+    remoteemail: 'hassletest917@gmail.com',
+    remotepassword: 'E&5c[B90XY2r7i3S',
+    notreguseremail: 'pakoj67899@showbaz.com',
+    notreguserpass: 'E&5c[B90XY2r7i3S',
+    cyrillicemail: 'фывфывукц',
+    latinemail: 'aderfggkaskd',
+    specsymbolemail:'!@#$%^&*()_+””№%:?*',
+    symbolemail: 'alibaevwebgmail.com',
+    emailnotdomain: 'm.orynbay@srgdev',
+    emailnumber: '1234567890',
+    adminemail: 'vms-admin@srgdev.kz',
+    adminpassword: '1q2w3e',
+    passwordcyrillic: 'фывфывфывфывфыв',
+    passwordlatin: 'asdasdasdasdgds',
+    passwordspecsymbol:'!@#$%^&*()_+”№%:',
+    roles: ['Архив', 'ГИС', 'Журнал событий','Камеры', 'Лог действий','Организации','Отчеты','Пользователи','Роли','Серверы'],
 
+};
 //данные для создание органзиции,объектов,камер
 export const orgparent = {
     title:'Тест1',
@@ -20,7 +52,19 @@ export const object = {
     title:'Тест3',
     noValuetitle:'',
 }
+export const camera = {
+    title:'Тест4',
+    noValuetitle:'',
+    login:'admin',
+    password:'admin123',
+    ip:'12.200.10.101',
+    port:'555',
+    nologin:'',
+    nopassword:'',
+    noip:'',
+    noport:'',
 
+}  
 export const rules = {
     text:'проверка текста',
     
