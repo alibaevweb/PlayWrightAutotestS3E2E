@@ -22,7 +22,7 @@ export const user = {
 
   export const userTwo = {
     type: 'twoFactor',
-    login: 'TestUserOne',
+    login: 'TestUserTwo',
     password: 'sdASD1234!',
     token: '1234',
     userUnixTime: '1234'
@@ -30,7 +30,7 @@ export const user = {
 
    export const userThree = {
     type: 'twoFactor',
-    login: 'TestUserOne',
+    login: 'TestUserThree',
     password: 'sdASD1234!',
     token: '1234',
     userUnixTime: '1234'
