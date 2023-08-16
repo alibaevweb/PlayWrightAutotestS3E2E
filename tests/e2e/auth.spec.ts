@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { user } from '../../constants/userdata';
+import { userOne} from '../../constants/userdata';
 import { HomePage } from '../../pages/home-page';
 import { LoginPage } from '../../pages/login-page';
 import { generateToken } from 'authenticator';
@@ -30,10 +31,10 @@ test('User can auth with authentificator', async ({ page }) => {
     await homepage.open();
     let otp = generateToken(user.token)
     await page.click('//span[contains(text(),"Логин")]');
-    await page.locator('//input[@name="username"]').fill('auto.test');
-    await page.locator('//input[@name="password"]').fill('Qwerty11!');
+    await page.locator('//input[@name="username"]').fill(userOne.login);
+    await page.locator('//input[@name="password"]').fill(userOne.password);
     await page.click('//span[@class="MuiButton-label"]');
-    await page.locator('//input[@name="verificationCode"]').fill(otp) ;
+    await page.locator('//input[@name="verificationCode"]').fill(userOne.token) ;
     await page.click('button[type="submit"] span[class="MuiButton-label"]')
     await expect(page).toHaveURL('https://dev.sergek.kz/ai-testing?tab=numbers');
 });
